@@ -26,8 +26,8 @@ const About = () => {
 					<h1 className="about-title">A little about me</h1>
 					<p className="description">
 						My name is Brandon Newsome and I am a Front-end Web Developer from
-						Baltimore, MD. From the moment I downloaded my first IDE(
-						<i>slight exaggeration</i>) I fell in love and I told myself that I{' '}
+						Baltimore, MD. From the moment I downloaded my first IDE I fell in
+						love and I told myself that I{' '}
 						<span className="big-letters">
 							<b>had</b>
 						</span>{' '}
@@ -47,6 +47,10 @@ const About = () => {
 						))}
 					</div>
 				</div>
+
+				<a href="#project-list" class="button scroll">
+					<span class="scroll-down-arrow"></span>
+				</a>
 			</div>
 		</div>
 	);

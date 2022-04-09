@@ -8,8 +8,8 @@
 		position: relative;
 
 		.waving-memoji {
-			height: 300px;
-			width: 300px;
+			height: 500px;
+			width: 500px;
 			position: absolute;
 			bottom: 0;
 		}
@@ -31,18 +31,24 @@
 		justify-content: center;
 		padding: 80px;
 
+		.about-title {
+			font-size: 42px;
+		}
+
 		.description {
 			font-weight: 300;
-			line-height: 28px;
+			line-height: 45px;
+			font-size: 30px;
 
 			.big-letters {
-				font-size: 18px;
+				font-size: 34px;
 			}
 		}
 
 		.skills {
 			margin-top: 40px;
 			display: flex;
+			width: 100%;
 
 			.skills-title {
 				// margin: 10px;
@@ -51,11 +57,12 @@
 			.skill-icon-container {
 				display: flex;
 				flex-direction: row;
+				margin-left: 40px;
 			}
 
 			.circle {
-				height: 100px;
-				width: 100px;
+				height: 150px;
+				width: 150px;
 				background-color: rgba(202, 200, 200, 0.2);
 				border-radius: 50%;
 				display: flex;
@@ -64,10 +71,112 @@
 				margin: 10px;
 
 				.skill-image {
-					height: 70px;
-					width: 70px;
+					height: 110px;
+					width: 110px;
 				}
 			}
 		}
+
+		.button.scroll {
+			padding: 8px;
+			background: rgb(73, 73, 73);
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			vertical-align: middle;
+			border-radius: 50%;
+			position: absolute;
+			bottom: -1300px;
+			right: 100px;
+		}
+		.scroll-down-arrow {
+			margin: 18px 0 0;
+			position: absolute;
+			left: 28px;
+			top: 7px;
+			-webkit-animation: bounce 1000ms ease infinite;
+			-moz-animation: bounce 1000ms ease infinite;
+			-o-animation: bounce 1000ms ease infinite;
+			animation: bounce 1000ms ease infinite;
+			-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+			-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+			-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+			animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 8px solid #f2f2f2;
+			content: '';
+		}
+		.button.scroll:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+			padding: 2px;
+			z-index: -1;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			display: block;
+			content: '';
+			-webkit-animation: ring 1s alternate 0s infinite;
+			-moz-animation: ring 1s alternate 0s infinite;
+			-o-animation: ring 1s linear 0s infinite;
+			animation: ring 1s linear 0s infinite;
+		}
+	}
+}
+
+// Scroll button
+
+@-webkit-keyframes bounce {
+	0%,
+	100% {
+		top: 9px;
+		opacity: 0.5;
+	}
+	25% {
+		top: 12px;
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.8;
+	}
+}
+@keyframes bounce {
+	0%,
+	100% {
+		top: 9px;
+		opacity: 0.5;
+	}
+	25% {
+		top: 12px;
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.8;
+	}
+}
+@-webkit-keyframes ring {
+	0%,
+	100% {
+		-webkit-transform: scale(1, 1);
+		opacity: 1;
+	}
+	75% {
+		-webkit-transform: scale(1.2, 1.2);
+		opacity: 0.4;
+	}
+}
+@keyframes ring {
+	0%,
+	100% {
+		transform: scale(1, 1);
+		opacity: 1;
+	}
+	75% {
+		transform: scale(1.2, 1.2);
+		opacity: 0.4;
 	}
 }

@@ -11,18 +11,18 @@ const Intro = () => {
 					<h2 className="intro-name">Brandon</h2>
 					<div className="intro-title">
 						<div className="intro-title-wrapper">
-							<div className="intro-title-item">Web Developer</div>
-							<div className="intro-title-item">UI/UX Designer</div>
-							<div className="intro-title-item">Photographer</div>
-							<div className="intro-title-item">Writer</div>
-							<div className="intro-title-item">Content Creator</div>
+							<div className="intro-title-item">Frontend Developer</div>
+							<div className="intro-title-item">Tech Enthusiast</div>
+							<div className="intro-title-item">Forever Student</div>
+							<div className="intro-title-item">Best Dad Ever</div>
+							<div className="intro-title-item">Sports Fanatic</div>
 						</div>
 					</div>
 
-					<p className="intro-description">
-						I design and develop services for various clients. I specialize in
-						creating stylish and responsive designs
-					</p>
+					<h2 className="intro-description">
+						I am passionate about producing quality work and I specialize in
+						creating stylish and responsive applications.
+					</h2>
 
 					<a href="#about" class="button scroll">
 						<span class="scroll-down-arrow"></span>
