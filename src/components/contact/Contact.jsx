@@ -52,8 +52,8 @@ const Contact = () => {
 				</div>
 				<div className="contact-right">
 					<p className="contact-description">
-						<b>What's your story?</b> Get in touch. Always freelancing if the
-						right project comes around.
+						<b>Write me!</b> I am currently looking for a full-time position and
+						am always open to freelancing if the right project comes around.
 					</p>
 
 					<form ref={formRef} onSubmit={handleSubmit}>
