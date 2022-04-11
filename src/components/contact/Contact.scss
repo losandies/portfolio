@@ -2,6 +2,11 @@
 	height: 100vh;
 	position: relative;
 
+	@media screen and (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.contact-bg {
 		width: 20px;
 		height: 100%;
@@ -15,12 +20,28 @@
 		position: relative;
 		top: 170px;
 
+		@media screen and (max-width: 500px) {
+			flex-direction: column;
+			height: 100vh;
+			padding: 0;
+			top: 40px;
+			left: 60px;
+		}
+
 		.contact-left {
 			flex: 1;
+
+			@media screen and (max-width: 500px) {
+				height: 30%;
+			}
 
 			.contact-title {
 				font-size: 60px;
 				width: 80%;
+
+				@media screen and (max-width: 500px) {
+					font-size: 30px;
+				}
 			}
 
 			.contact-info {
@@ -31,10 +52,20 @@
 					font-weight: 300;
 					width: 70%;
 
+					@media screen and (max-width: 500px) {
+						margin: 20px 0px;
+						width: 100%;
+					}
+
 					.contact-icon {
 						width: 30px;
 						height: 30px;
 						margin-right: 20px;
+
+						@media screen and (max-width: 500px) {
+							width: 20px;
+							height: 20px;
+						}
 					}
 				}
 			}
@@ -42,6 +73,10 @@
 			.call-me-memoji {
 				position: absolute;
 				top: 745px;
+
+				@media screen and (max-width: 500px) {
+					display: none;
+				}
 			}
 		}
 
@@ -56,10 +91,16 @@
 				font-weight: 300;
 				font-size: 18px;
 				width: 600px;
+
+				@media screen and (max-width: 500px) {
+					display: none;
+				}
 			}
 
 			form {
 				margin-top: 20px;
+				position: relative;
+				top: -100px;
 
 				input {
 					width: 50%;

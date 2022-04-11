@@ -7,11 +7,11 @@ const Intro = () => {
 		<div className="intro">
 			<div className="intro-left">
 				<div className="intro-left-wrapper">
-					<h2 className="intro-introduction">Hey there, I'm </h2>
+					<h2 className="intro-introduction">Hey, I'm </h2>
 					<h2 className="intro-name">Brandon</h2>
 					<div className="intro-title">
 						<div className="intro-title-wrapper">
-							<div className="intro-title-item">Frontend Developer</div>
+							<div className="intro-title-item">Web Developer</div>
 							<div className="intro-title-item">Tech Enthusiast</div>
 							<div className="intro-title-item">Forever Student</div>
 							<div className="intro-title-item">Best Dad Ever</div>
