@@ -46,6 +46,7 @@
 		flex-direction: column;
 		justify-content: center;
 		padding: 80px;
+		width: 50%;
 
 		@media screen and (max-width: 500px) {
 			padding: 0;
@@ -94,15 +95,15 @@
 		.skills {
 			margin-top: 40px;
 			display: flex;
-			width: 100%;
 
 			.skill-icon-container {
 				display: flex;
 				flex-direction: row;
 				margin-left: 40px;
+				width: 100%;
+				flex-wrap: wrap;
 
 				@media screen and (max-width: 500px) {
-					flex-wrap: wrap;
 					justify-content: center;
 					align-items: center;
 					margin-left: 0;
@@ -130,6 +131,11 @@
 			justify-content: center;
 			margin: 10px;
 
+			@media screen and (max-width: 1410px) {
+				height: 90px;
+				width: 90px;
+			}
+
 			@media screen and (max-width: 500px) {
 				height: 75px;
 				width: 75px;
@@ -138,6 +144,11 @@
 			.skill-image {
 				height: 110px;
 				width: 110px;
+
+				@media screen and (max-width: 1410px) {
+					height: 70px;
+					width: 70px;
+				}
 
 				@media screen and (max-width: 500px) {
 					height: 50px;
