@@ -9,7 +9,7 @@
 	}
 
 	.project {
-		width: 600px;
+		width: 30vw;
 		height: 30vh;
 		margin: 20px 10px;
 		border: 3px solid rgb(253, 253, 253);
@@ -18,8 +18,8 @@
 		transition: 0.2s ease-in;
 
 		@media screen and (max-width: 600px) {
-			width: 350px;
-			height: 30vh;
+			width: 300px;
+			height: 25vh;
 			margin: 40px 20px;
 		}
 

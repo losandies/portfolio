@@ -32,7 +32,7 @@ const Contact = () => {
 			<div className="contact-bg"></div>
 			<div className="contact-wrapper">
 				<div className="contact-left">
-					<h1 className="contact-title">Get in touch with me!</h1>
+					<h1 className="contact-title">Get in touch!</h1>
 					<div className="contact-info">
 						<div className="contact-info-item">
 							<img src={images.phone} alt="" className="contact-icon" />

@@ -5,6 +5,8 @@
 	@media screen and (max-width: 500px) {
 		flex-direction: column;
 		text-align: center;
+		justify-content: center;
+		align-items: center;
 		margin-top: 50px;
 	}
 
@@ -14,26 +16,27 @@
 		position: relative;
 
 		@media screen and (max-width: 500px) {
-			width: 100%;
+			display: none;
+		}
+
+		@media screen and (max-width: 1100px) {
+			display: none;
+			// margin-bottom: 200px;
 		}
 
 		.waving-memoji {
 			height: 500px;
 			width: 500px;
-			position: absolute;
-			bottom: 0;
+			position: relative;
+			top: 470px;
 
 			@media screen and (max-width: 500px) {
 				display: none;
 			}
-		}
 
-		.a-card {
-			// height: 100%;
-
-			// position: relative;
-
-			background-color: red;
+			@media screen and (max-width: 1100px) {
+				display: none;
+			}
 		}
 	}
 
@@ -41,12 +44,21 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		// align-items: center;
 		justify-content: center;
 		padding: 80px;
 
 		@media screen and (max-width: 500px) {
-			width: 100%;
+			padding: 0;
+			justify-content: center;
+			align-items: center;
+
+			flex: none;
+			width: 80%;
+		}
+
+		@media screen and (max-width: 1100px) {
+			align-items: center;
+			justify-content: center;
 		}
 
 		.about-title {
@@ -67,6 +79,13 @@
 				font-size: 16px;
 				line-height: 20px;
 				width: 100%;
+				margin: 0;
+			}
+
+			@media screen and (max-width: 1100px) {
+				width: 80%;
+
+				// margin-bottom: 200px;
 			}
 
 			.big-letters {
@@ -83,120 +102,125 @@
 			display: flex;
 			width: 100%;
 
-			@media screen and (max-width: 500px) {
-				flex-direction: column;
-
-				.skills-title {
-					// margin: 10px;
-				}
-
-				.skill-icon-container {
-					display: flex;
-					flex-direction: row;
-					margin-left: 40px;
-
-					@media screen and (max-width: 500px) {
-						flex-wrap: wrap;
-						justify-content: center;
-						align-items: center;
-						margin-left: 0;
-					}
-				}
-			}
-
-			.circle {
-				height: 150px;
-				width: 150px;
-				background-color: rgba(202, 200, 200, 0.2);
-				border-radius: 50%;
+			.skill-icon-container {
 				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 10px;
+				flex-direction: row;
+				margin-left: 40px;
 
 				@media screen and (max-width: 500px) {
-					height: 75px;
-					width: 75px;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					margin-left: 0;
 				}
 
-				.skill-image {
-					height: 110px;
-					width: 110px;
-
-					@media screen and (max-width: 500px) {
-						height: 50px;
-						width: 50px;
-					}
+				@media screen and (max-width: 1100px) {
+					flex-wrap: wrap;
+					flex-direction: row;
+					// width: 40%;
 				}
+			}
+
+			@media screen and (max-width: 500px) {
+				flex-direction: column;
 			}
 		}
 
-		.button.scroll {
-			padding: 8px;
-			background: rgb(73, 73, 73);
-			display: inline-block;
-			width: 50px;
-			height: 50px;
-			text-align: center;
-			vertical-align: middle;
+		.circle {
+			height: 150px;
+			width: 150px;
+			background-color: rgba(202, 200, 200, 0.2);
 			border-radius: 50%;
-			position: absolute;
-			bottom: -1300px;
-			right: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px;
 
 			@media screen and (max-width: 500px) {
-				position: relative;
-				width: 100%;
-				height: 30px;
-				left: 0;
-				top: 70px;
-				border-radius: 0;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+				height: 75px;
+				width: 75px;
 			}
-		}
-		.scroll-down-arrow {
-			margin: 18px 0 0;
-			position: absolute;
-			left: 28px;
-			top: 7px;
-			-webkit-animation: bounce 1000ms ease infinite;
-			-moz-animation: bounce 1000ms ease infinite;
-			-o-animation: bounce 1000ms ease infinite;
-			animation: bounce 1000ms ease infinite;
-			-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-			-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-			-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-			animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-			border-left: 5px solid transparent;
-			border-right: 5px solid transparent;
-			border-top: 8px solid #f2f2f2;
-			content: '';
 
-			@media screen and (max-width: 500px) {
-				position: static;
-				left: 0;
-				top: 100px;
+			.skill-image {
+				height: 110px;
+				width: 110px;
+
+				@media screen and (max-width: 500px) {
+					height: 50px;
+					width: 50px;
+				}
 			}
 		}
-		.button.scroll:before {
+	}
+
+	.button.scroll {
+		padding: 8px;
+		background: rgb(73, 73, 73);
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		vertical-align: middle;
+		border-radius: 50%;
+		position: absolute;
+		bottom: -950px;
+		right: 100px;
+
+		@media screen and (max-width: 500px) {
 			position: absolute;
-			top: 0;
+			width: 100%;
+			height: 30px;
+			top: 200.5vh;
+
 			left: 0;
-			box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
-			padding: 2px;
-			z-index: -1;
-			width: 32px;
-			height: 32px;
-			border-radius: 50%;
-			display: block;
-			content: '';
-			-webkit-animation: ring 1s alternate 0s infinite;
-			-moz-animation: ring 1s alternate 0s infinite;
-			-o-animation: ring 1s linear 0s infinite;
-			animation: ring 1s linear 0s infinite;
+			// bottom: 0;
+			// top: 70px;
+			border-radius: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
+	}
+	.scroll-down-arrow {
+		margin: 18px 0 0;
+		position: absolute;
+		left: 28px;
+		top: 7px;
+		-webkit-animation: bounce 1000ms ease infinite;
+		-moz-animation: bounce 1000ms ease infinite;
+		-o-animation: bounce 1000ms ease infinite;
+		animation: bounce 1000ms ease infinite;
+		-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+		-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+		-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+		animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 8px solid #f2f2f2;
+		content: '';
+
+		@media screen and (max-width: 500px) {
+			position: absolute;
+			left: 50vw;
+			top: 100px;
+		}
+	}
+	.button.scroll:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+		padding: 2px;
+		z-index: -1;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		display: block;
+		content: '';
+		-webkit-animation: ring 1s alternate 0s infinite;
+		-moz-animation: ring 1s alternate 0s infinite;
+		-o-animation: ring 1s linear 0s infinite;
+		animation: ring 1s linear 0s infinite;
 	}
 }
 
