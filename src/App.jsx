@@ -5,7 +5,7 @@ import Contact from './components/contact/Contact';
 
 const App = () => {
 	return (
-		<div>
+		<div style={{ width: '100vw' }}>
 			<Intro />
 			<About />
 			<ProjectList />
