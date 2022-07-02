@@ -11,12 +11,13 @@ const Project = ({ title, img, link, description, techUsed }) => {
 					<div className="project-circle yellow"></div>
 					<div className="project-circle green"></div>
 				</div>
-				<a href={link} target="_blank">
+				<a href={link} target="_blank" rel="noreferrer">
 					<img className="project-image" src={img} alt="" />
 				</a>
 			</div>
 
 			<h2 className="project-title">{title}</h2>
+			<h3>{techUsed}</h3>
 			<p className="project-description">{description}</p>
 		</div>
 	);

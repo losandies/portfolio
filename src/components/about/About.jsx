@@ -8,8 +8,11 @@ const mySkills = [
 	images.css,
 	images.javascript,
 	images.react,
+	images.mongodbicon2,
+	images.nodejsicon,
 	images.sass,
 	images.git,
+	images.tailwindicon,
 ];
 
 const About = () => {

@@ -11,12 +11,22 @@ import email from '../img/email.png';
 import address from '../img/address.png';
 import phone from '../img/phone.png';
 import callMe from '../img/call-me-memoji.png';
+import githubImg from '../img/githubImg.png';
+import stromboImg from '../img/stromboImg.png';
+import nodejsicon from '../img/nodejsicon.png';
+import mongodbicon2 from '../img/mongodbicon2.png';
+import tailwindicon from '../img/tailwindicon.png';
 
 export default {
 	callMe,
 	jokeImg,
 	moviesImg,
 	calcImg,
+	githubImg,
+	stromboImg,
+	nodejsicon,
+	mongodbicon2,
+	tailwindicon,
 	sass,
 	react,
 	javascript,

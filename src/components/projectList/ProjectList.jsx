@@ -27,7 +27,6 @@ const ProjectList = () => {
 			<a href="#contact" class="button scroll">
 				<span class="scroll-down-arrow"></span>
 			</a>
-			<img src={Me} alt="memoji-computer" className="laptop-memoji" />
 		</div>
 	);
 };
