@@ -29,7 +29,7 @@ const Contact = () => {
 	};
 	return (
 		<div className="contact" id="contact">
-			<div className="contact-bg"></div>
+			{/* <div className="contact-bg"></div> */}
 			<div className="contact-wrapper">
 				<div className="contact-left">
 					<h1 className="contact-title">Get in touch!</h1>
@@ -56,7 +56,7 @@ const Contact = () => {
 						am always open to freelancing if the right project comes around.
 					</p>
 
-					<form ref={formRef} onSubmit={handleSubmit}>
+					<form ref={formRef} onSubmit={handleSubmit} id="form">
 						<input type="text" placeholder="Name" name="user_name" />
 						<input type="text" placeholder="Subject" name="user_subject" />
 						<input type="email" placeholder="Email" name="user_email" />

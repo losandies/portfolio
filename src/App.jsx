@@ -4,6 +4,7 @@ import ProjectList from './components/projectList/ProjectList';
 import Contact from './components/contact/Contact';
 import './App.scss';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<About />
 			<ProjectList />
 			<Contact />
+			<Footer />
 		</div>
 	);
 };
