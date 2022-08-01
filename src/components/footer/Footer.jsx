@@ -9,7 +9,12 @@ const Footer = () => {
 		<footer className="footer socials-wrapper">
 			<ul className="socials">
 				<li className="social-link">
-					<a href="https://twitter.com/307px" className="social-icon">
+					<a
+						href="https://twitter.com/307px"
+						className="social-icon"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<BsTwitter />
 					</a>
 				</li>
@@ -17,12 +22,19 @@ const Footer = () => {
 					<a
 						href="https://www.linkedin.com/in/brandon-newsome-58806a1a2/"
 						className="social-icon"
+						target="_blank"
+						rel="noreferrer"
 					>
 						<BsLinkedin />
 					</a>
 				</li>
 				<li className="social-link">
-					<a href="https://github.com/losandies" className="social-icon">
+					<a
+						href="https://github.com/losandies"
+						className="social-icon"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<BsGithub />
 					</a>
 				</li>
