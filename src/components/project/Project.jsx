@@ -17,7 +17,7 @@ const Project = ({ title, img, link, description, techUsed }) => {
 			</div>
 
 			<h2 className="project-title">{title}</h2>
-			<h3>{techUsed}</h3>
+			<h3 className="tech-used">({techUsed})</h3>
 			<p className="project-description">{description}</p>
 		</div>
 	);
