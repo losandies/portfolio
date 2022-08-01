@@ -31,7 +31,7 @@ const Navbar = () => {
 				<div className="navbar-collapse collapse" id="navbarNavAltMarkup">
 					<div className="navbar-nav">
 						<a
-							className="nav-link active"
+							className="nav-link"
 							aria-current="page"
 							href="#about"
 							onClick={() => handleCollapse()}

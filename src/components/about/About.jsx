@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.scss';
 import WavingPic from '../../img/waving-memoji.png';
 import { images } from '../../constants/index';
+import { useAnimation, motion } from 'framer-motion/dist/framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const mySkills = [
 	images.html,
@@ -15,7 +17,36 @@ const mySkills = [
 	images.tailwindicon,
 ];
 
+const container = {
+	hidden: { opacity: 1, scale: 0 },
+	visible: {
+		opacity: 1,
+		scale: 1,
+		transition: {
+			delayChildren: 0.3,
+			staggerChildren: 0.2,
+		},
+	},
+};
+
+const item = {
+	hidden: { y: 20, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+	},
+};
+
 const About = () => {
+	const controls = useAnimation();
+	const [ref, inView] = useInView();
+
+	useEffect(() => {
+		if (inView) {
+			controls.start('visible');
+		}
+	}, [controls, inView]);
+
 	return (
 		<div className="about" id="about">
 			<div className="about-left">
@@ -28,7 +59,7 @@ const About = () => {
 				<div className="about-me">
 					<h1 className="about-title">A little about me</h1>
 					<p className="description">
-						My name is Brandon Newsome and I am a Front-end Web Developer from
+						My name is Brandon Newsome and I am a Software Developer from
 						Baltimore, MD. From the moment I downloaded my first IDE I fell in
 						love and I told myself that I{' '}
 						<span className="big-letters">
@@ -42,13 +73,23 @@ const About = () => {
 				<div className="skills">
 					<h1 className="skills-title">Skills</h1>
 
-					<div className="skill-icon-container">
+					<motion.ul
+						className="skill-icon-container container"
+						variants={container}
+						ref={ref}
+						initial="hidden"
+						animate={controls}
+					>
 						{mySkills.map((circle, index) => (
-							<div className="circle" key={`circle-${index}`}>
+							<motion.li
+								className="circle item"
+								key={`circle-${index}`}
+								variants={item}
+							>
 								<img src={circle} alt="circle" className="skill-image" />
-							</div>
+							</motion.li>
 						))}
-					</div>
+					</motion.ul>
 				</div>
 
 				<a href="#project-list" class="button scroll">
