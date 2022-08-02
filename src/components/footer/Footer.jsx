@@ -6,7 +6,7 @@ const Footer = () => {
 	const iconStyles = { color: 'white', fontSize: '1.5em' };
 
 	return (
-		<footer className="footer socials-wrapper">
+		<footer id="footer" className="footer socials-wrapper">
 			<ul className="socials">
 				<li className="social-link">
 					<a

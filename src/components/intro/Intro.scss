@@ -1,6 +1,7 @@
 .intro {
 	display: flex;
 	height: 100vh;
+	width: 100vw;
 
 	@media screen and (max-width: 500px) {
 		flex-direction: column;
@@ -9,12 +10,38 @@
 		height: 100vh;
 	}
 
+	@media screen and (max-width: 1100px) {
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		// margin-bottom: 200px;
+	}
+
 	.intro-left {
 		flex: 1;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+
+		@media screen and (max-width: 500px) {
+			margin-top: 100px;
+		}
+
+		@media screen and (max-width: 1100px) {
+			flex: none;
+			// margin-bottom: 400px;
+			width: 100%;
+			height: 300px;
+			z-index: -10;
+			overflow-y: hidden;
+		}
+
+		@media screen and (max-height: 1200px) {
+			margin-bottom: 0px;
+		}
 	}
 
 	.intro-left-wrapper {
@@ -23,7 +50,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 1100px) {
 			padding: 10px;
 			align-items: center;
 			text-align: center;
@@ -79,6 +106,10 @@
 			@media screen and (max-width: 500px) {
 				display: none;
 			}
+
+			@media screen and (max-width: 1100px) {
+				width: 60%;
+			}
 		}
 
 		.button.scroll {
@@ -98,10 +129,15 @@
 				display: none;
 			}
 
+			@media screen and (max-width: 1200px) {
+				display: none;
+				// margin-bottom: 200px;
+			}
+
 			.scroll-down-arrow {
 				margin: 18px 0 0;
 				position: absolute;
-				left: 28px;
+				left: 20px;
 				top: 7px;
 				-webkit-animation: bounce 1000ms ease infinite;
 				-moz-animation: bounce 1000ms ease infinite;
@@ -150,6 +186,21 @@
 	justify-content: center;
 	flex-direction: column;
 
+	@media screen and (max-width: 1100px) {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex: none;
+		height: 300px;
+		width: 100%;
+		overflow: hidden;
+		// margin-bottom: 200px;
+	}
+
+	@media screen and (max-width: 500px) {
+		// flex: 1;
+	}
+
 	.intro-right-background {
 		clip-path: polygon(84% 3%, 0 66%, 100% 100%);
 		height: 580px;
@@ -170,36 +221,45 @@
 			display: none;
 			// margin-bottom: 200px;
 		}
+
+		@media screen and (max-height: 1200px) {
+			display: none;
+		}
 	}
 
-	.img-wrapper {
-		.intro-picture {
-			height: 400px;
-			width: 400px;
-			position: absolute;
-			right: 150px;
-			bottom: 300px;
-			z-index: 3;
+	.intro-picture {
+		height: 400px;
+		width: 400px;
+		position: absolute;
+		right: 150px;
+		bottom: 300px;
+		z-index: 3;
 
-			@media screen and (max-width: 1100px) {
-				display: none;
+		@media screen and (max-width: 1100px) {
+			position: relative;
+			margin-top: 400px;
+			margin-left: 350px;
+			bottom: 200px;
+		}
+		// @media screen and (max-height: 1200px) {
+		// 	display: none;
+		// }
 
-				// margin-bottom: 200px;
-			}
+		@media screen and (max-width: 500px) {
+			position: relative;
+			height: 300px;
+			width: 300px;
+			// bottom: 0;
+			// right: 0;
+			// height: 300px;
+			// width: 300px;
+			// left: 10vw;
+			// bottom: 0px;
+			// right: 0px;
+			// top: 30vh;
+			// margin-bottom: 200px;
 
-			@media screen and (max-width: 500px) {
-				display: block;
-
-				height: 300px;
-				width: 300px;
-				left: 10vw;
-				bottom: 0px;
-				right: 0px;
-				top: 30vh;
-				// margin-bottom: 200px;
-
-				margin: auto;
-			}
+			// margin: auto;
 		}
 	}
 }

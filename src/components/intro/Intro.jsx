@@ -4,7 +4,7 @@ import Me from '../../img/portfolio-emoji.png';
 
 const Intro = () => {
 	return (
-		<div className="intro">
+		<div className="intro" id="intro">
 			<div className="intro-left">
 				<div className="intro-left-wrapper">
 					<h2 className="intro-introduction">Hey, I'm </h2>
@@ -22,9 +22,7 @@ const Intro = () => {
 			</div>
 			<div className="intro-right">
 				<div className="intro-right-background"></div>
-				<div className="img-wrapper">
-					<img src={Me} alt="my-pic" class="intro-picture" />
-				</div>
+				<img src={Me} alt="my-pic" class="intro-picture" />
 			</div>
 		</div>
 	);

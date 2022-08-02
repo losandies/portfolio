@@ -24,9 +24,11 @@ const ProjectList = () => {
 					))}
 				</div>
 			</div>
-			<a href="#contact" class="button scroll">
-				<span class="scroll-down-arrow"></span>
-			</a>
+			<div className="button-container">
+				<a href="#footer" class="button scroll">
+					<span class="scroll-down-arrow"></span>
+				</a>
+			</div>
 		</div>
 	);
 };

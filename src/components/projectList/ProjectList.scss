@@ -3,7 +3,6 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	flex-wrap: wrap;
 	width: 100vw;
 	height: 100vh;
 
@@ -12,16 +11,23 @@
 		height: auto;
 	}
 
+	@media screen and (max-width: 1700px) {
+		flex-wrap: wrap;
+		// justify-content: center;
+		// align-items: center;
+		height: auto;
+	}
+
 	.p1-text {
 		width: 65%;
 
 		.p1-title {
-			margin-top: 50px;
+			margin-top: 180px;
 			font-size: 40px;
 			font-weight: 600;
 
 			@media screen and (max-width: 500px) {
-				margin-top: 70px;
+				margin-top: 50px;
 				font-size: 32px;
 			}
 		}
@@ -34,6 +40,7 @@
 
 		.p1-list {
 			width: 100%;
+			margin-top: 100px;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
@@ -44,66 +51,97 @@
 				align-items: center;
 				margin-bottom: 100px;
 			}
+			@media screen and (max-width: 1700px) {
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 100px;
+				margin-top: 40px;
+			}
 		}
 	}
 
-	.button.scroll {
-		padding: 8px;
-		background: rgb(73, 73, 73);
-		display: inline-block;
-		width: 50px;
-		height: 50px;
-		text-align: center;
-		vertical-align: middle;
-		border-radius: 50%;
+	.button-container {
+		width: 100%;
+		height: 80px;
 		position: absolute;
-		top: 290vh;
-		left: 100px;
+		top: 3917px;
 
-		@media screen and (max-width: 500px) {
+		@media screen and (max-width: 1700px) {
+			position: relative;
+			top: -10px;
+		}
+
+		@media screen and (max-width: 1200px) {
 			display: none;
+			// margin-bottom: 200px;
 		}
-	}
-	.scroll-down-arrow {
-		margin: 18px 0 0;
-		position: absolute;
-		left: 28px;
-		top: 7px;
-		-webkit-animation: bounce 1000ms ease infinite;
-		-moz-animation: bounce 1000ms ease infinite;
-		-o-animation: bounce 1000ms ease infinite;
-		animation: bounce 1000ms ease infinite;
-		-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-		-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-		-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-		animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-		border-left: 5px solid transparent;
-		border-right: 5px solid transparent;
-		border-top: 8px solid #f2f2f2;
-		content: '';
 
-		@media screen and (max-width: 500px) {
+		.button.scroll {
+			padding: 8px;
+			background: #212529;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			vertical-align: middle;
+			border-radius: 50%;
 			position: absolute;
-			left: 50vw;
-			top: 100px;
+			// top: 3917px;
+			left: 100px;
+			@media screen and (max-width: 500px) {
+				display: none;
+			}
+
+			@media screen and (max-width: 1700px) {
+				position: relative;
+				display: block;
+				top: 9px;
+				right: 900px;
+			}
+
+			.scroll-down-arrow {
+				margin: 18px 0 0;
+				position: absolute;
+				left: 20px;
+				top: 7px;
+				-webkit-animation: bounce 1000ms ease infinite;
+				-moz-animation: bounce 1000ms ease infinite;
+				-o-animation: bounce 1000ms ease infinite;
+				animation: bounce 1000ms ease infinite;
+				-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+				-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+				-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+				animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 8px solid #f2f2f2;
+				content: '';
+
+				@media screen and (max-width: 500px) {
+					position: absolute;
+					left: 50vw;
+					top: 100px;
+				}
+			}
+			.button.scroll:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+				padding: 2px;
+				z-index: -1;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				display: block;
+				content: '';
+				-webkit-animation: ring 1s alternate 0s infinite;
+				-moz-animation: ring 1s alternate 0s infinite;
+				-o-animation: ring 1s linear 0s infinite;
+				animation: ring 1s linear 0s infinite;
+			}
 		}
-	}
-	.button.scroll:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
-		padding: 2px;
-		z-index: -1;
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		display: block;
-		content: '';
-		-webkit-animation: ring 1s alternate 0s infinite;
-		-moz-animation: ring 1s alternate 0s infinite;
-		-o-animation: ring 1s linear 0s infinite;
-		animation: ring 1s linear 0s infinite;
 	}
 }
 

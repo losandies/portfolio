@@ -50,10 +50,12 @@ const About = () => {
 	return (
 		<div className="about" id="about">
 			<div className="about-left">
-				<div className="a-card bg"></div>
 				<div className="a-card">
 					<img src={WavingPic} alt="waving-memoji" className="waving-memoji" />
 				</div>
+				<a href="#project-list" class="button scroll">
+					<span class="scroll-down-arrow"></span>
+				</a>
 			</div>
 			<div className="about-right">
 				<div className="about-me">
@@ -91,10 +93,6 @@ const About = () => {
 						))}
 					</motion.ul>
 				</div>
-
-				<a href="#project-list" class="button scroll">
-					<span class="scroll-down-arrow"></span>
-				</a>
 			</div>
 		</div>
 	);

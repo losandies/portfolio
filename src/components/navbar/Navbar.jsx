@@ -13,7 +13,7 @@ const Navbar = () => {
 	return (
 		<nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-dark">
 			<div className="container-fluid">
-				<a className="navbar-brand" href="/">
+				<a className="navbar-brand" href="#intro">
 					Brandon's Portfolio
 				</a>
 				<button
@@ -56,7 +56,7 @@ const Navbar = () => {
 						</a>
 						<a
 							className="nav-link"
-							href="#contact"
+							href="#footer"
 							onClick={() => handleCollapse()}
 						>
 							Contact Me
