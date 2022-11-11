@@ -32,14 +32,12 @@
 			.waving-memoji {
 				height: 500px;
 				width: 500px;
-				// position: relative;
-				// top: 400px;
+
 				margin-top: 350px;
 				margin-left: 200px;
 				border-radius: 100%;
 				border: 1px white;
-				// box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-				// 	rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 				box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
 					rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
 					rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
@@ -190,7 +188,6 @@
 				@media screen and (max-width: 1400px) {
 					flex-wrap: wrap;
 					flex-direction: row;
-					// width: 40%;
 				}
 			}
 
@@ -235,65 +232,6 @@
 			}
 		}
 	}
-
-	// .button.scroll {
-	// 	padding: 8px;
-	// 	background: rgb(73, 73, 73);
-	// 	display: inline-block;
-	// 	width: 50px;
-	// 	height: 50px;
-	// 	text-align: center;
-	// 	vertical-align: middle;
-	// 	border-radius: 50%;
-	// 	position: relative;
-	// 	top: 10rem;
-	// 	left: 80px;
-
-	// 	@media screen and (max-width: 500px) {
-	// 		display: none;
-	// 	}
-	// }
-	// .scroll-down-arrow {
-	// 	margin: 18px 0 0;
-	// 	position: absolute;
-	// 	left: 28px;
-	// 	top: 7px;
-	// 	-webkit-animation: bounce 1000ms ease infinite;
-	// 	-moz-animation: bounce 1000ms ease infinite;
-	// 	-o-animation: bounce 1000ms ease infinite;
-	// 	animation: bounce 1000ms ease infinite;
-	// 	-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-	// 	-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-	// 	-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-	// 	animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-	// 	border-left: 5px solid transparent;
-	// 	border-right: 5px solid transparent;
-	// 	border-top: 8px solid #f2f2f2;
-	// 	content: '';
-
-	// 	@media screen and (max-width: 500px) {
-	// 		position: absolute;
-	// 		left: 50vw;
-	// 		top: 100px;
-	// 	}
-	// }
-	// .button.scroll:before {
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
-	// 	padding: 2px;
-	// 	z-index: -1;
-	// 	width: 32px;
-	// 	height: 32px;
-	// 	border-radius: 50%;
-	// 	display: block;
-	// 	content: '';
-	// 	-webkit-animation: ring 1s alternate 0s infinite;
-	// 	-moz-animation: ring 1s alternate 0s infinite;
-	// 	-o-animation: ring 1s linear 0s infinite;
-	// 	animation: ring 1s linear 0s infinite;
-	// }
 }
 
 // Scroll button

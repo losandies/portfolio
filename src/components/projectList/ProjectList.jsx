@@ -2,7 +2,6 @@ import React from 'react';
 import './ProjectList.scss';
 import Project from '../project/Project';
 import { projects } from '../../data';
-import Me from '../../img/memoji-computer.png';
 
 const ProjectList = () => {
 	return (

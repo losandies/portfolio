@@ -9,6 +9,7 @@
 		"@testing-library/react": "^11.1.0",
 		"@testing-library/user-event": "^12.1.10",
 		"bootstrap": "^5.2.0",
+		"dart-sass": "^1.25.0",
 		"framer-motion": "^6.5.1",
 		"gh-pages": "^4.0.0",
 		"node-sass": "^5.0.0",

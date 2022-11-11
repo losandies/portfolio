@@ -29,7 +29,6 @@ const Contact = () => {
 	};
 	return (
 		<div className="contact" id="contact">
-			{/* <div className="contact-bg"></div> */}
 			<div className="contact-wrapper">
 				<div className="contact-left">
 					<h1 className="contact-title">Get in touch!</h1>
@@ -51,26 +50,29 @@ const Contact = () => {
 					<img src={images.callMe} alt="call-me" className="call-me-memoji" />
 				</div>
 				<div className="contact-right">
-					<p className="contact-description">
-						<b>Write me!</b> I am currently looking for a full-time position and
-						am always open to freelancing if the right project comes around.
-					</p>
+					<div className="contact-container">
+						<p className="contact-description">
+							<b>Write me!</b> I am currently looking for a full-time position
+							and am always open to freelancing if the right project comes
+							around.
+						</p>
 
-					<form ref={formRef} onSubmit={handleSubmit} id="form">
-						<input type="text" placeholder="Name" name="user_name" />
-						<input type="text" placeholder="Subject" name="user_subject" />
-						<input type="email" placeholder="Email" name="user_email" />
-						<textarea
-							placeholder="Message"
-							name="message"
-							cols="1"
-							rows="5"
-						></textarea>
-						<button type="submit" value="Send">
-							Submit
-						</button>
-						{done && 'Thank you...'}
-					</form>
+						<form ref={formRef} onSubmit={handleSubmit} id="form">
+							<input type="text" placeholder="Name" name="user_name" />
+							<input type="text" placeholder="Subject" name="user_subject" />
+							<input type="email" placeholder="Email" name="user_email" />
+							<textarea
+								placeholder="Message"
+								name="message"
+								cols="1"
+								rows="5"
+							></textarea>
+							<button type="submit" value="Send">
+								Submit
+							</button>
+							{done && 'Thank you...'}
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -3,8 +3,6 @@ import './Footer.scss';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
-	const iconStyles = { color: 'white', fontSize: '1.5em' };
-
 	return (
 		<footer id="footer" className="footer socials-wrapper">
 			<ul className="socials">
