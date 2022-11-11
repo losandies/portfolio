@@ -8,17 +8,18 @@ export const projects = [
 		img: images.stromboImg,
 		link: 'https://strombo.herokuapp.com/',
 		description:
-			'A ticketing system built with the MERN stack. It utilizes Tailwind and Daisy UI for the CSS, Redux Toolkit for app-wide state management and has a custom built authentication system using JSON web tokens.',
+			'A ticketing system built with the MERN stack. Users can create projects where tickets can be assigned and sorted by importance. Anyone can then claim tickets, complete tickets, or even reopen tickets. Tickets claimed by a user will be shown on a separate page where the user can update the status.',
 		techUsed: 'MERN Stack, Tailwind, Redux Toolkit, JWT',
 	},
 	{
 		id: 2,
-		title: 'Github Finder',
-		img: images.githubImg,
-		link: 'https://github-finder-fawn.vercel.app/',
+		title: "Movies A'hoy",
+		img: images.moviesImg,
+		link: 'https://movies-ahoy.herokuapp.com',
 		description:
-			"I built a github search engine. You can search for any user on github and this application will display almost everything in the user's profile, including their repositories, who they follow and who follows them.",
-		techUsed: 'React, CSS, Bootstrap5, The MovieDB API',
+			"This is a movie library application that lays out things like what movies or shows are trending this week, what's new in theatres, popular movies of the year, and even recommends movies based off the user's favorite genre.",
+		techUsed:
+			'React, Tailwind, Styled Components, Node js, Postgres, The MovieDB API',
 	},
 	{
 		id: 3,
@@ -29,13 +30,4 @@ export const projects = [
 			'This is a joke generating app that mimics and iMessage conversation. Users can click the button to get a joke and also send a response back',
 		techUsed: 'JavaScript, HTML, CSS',
 	},
-	// {
-	// 	id: 4,
-	// 	title: 'Personal Portfolio',
-	// 	img: images.calcImg,
-	// 	link: 'https://losandies.github.io/vanilla_calc/',
-	// 	description:
-	// 		'Here is a fully functional standard calculator that allows users to input various operations and receive back the output. This app has keyboard support as well.',
-	// 	techUsed: 'JavaScript, HTML, CSS',
-	// },
 ];
