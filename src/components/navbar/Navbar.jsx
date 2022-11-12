@@ -3,7 +3,6 @@ import './Navbar.scss';
 
 const Navbar = () => {
 	const handleCollapse = () => {
-		console.log('handleCollapse');
 		var nav = document.getElementById('navbarNavAltMarkup');
 		var btn = document.getElementById('navbarBtn');
 		nav.classList.remove('show');

@@ -5,3 +5,10 @@
 	border: 1px solid gray;
 	background-color: gray;
 }
+
+.nav-link {
+	transition: ease-in 100ms;
+	&:hover {
+		transform: scale(1.1);
+	}
+}

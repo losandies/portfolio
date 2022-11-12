@@ -79,7 +79,7 @@
 		}
 
 		@media screen and (min-width: 1700px) {
-			top: 4350px;
+			top: 3576px;
 		}
 
 		.button.scroll {
@@ -93,15 +93,14 @@
 			border-radius: 50%;
 			position: absolute;
 			left: 100px;
+
 			@media screen and (max-width: 500px) {
 				display: none;
 			}
 
 			@media screen and (max-width: 1700px) {
-				position: relative;
+				position: absolute;
 				display: block;
-				top: 9px;
-				right: 900px;
 			}
 
 			.scroll-down-arrow {
