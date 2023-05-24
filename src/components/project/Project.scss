@@ -1,94 +1,94 @@
 .project-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 
-	@media screen and (max-width: 500px) {
-		width: 100%;
-	}
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
 
-	.project {
-		width: 100%;
-		height: 400px;
-		margin: 20px 10px;
-		border: 3px solid rgb(253, 253, 253);
-		border-radius: 10px 10px 10px 10px;
-		overflow: hidden;
-		transition: 0.2s ease-in;
-		max-width: 600px;
-		min-width: 500px;
-		min-height: 400px;
+    .project {
+        width: 100%;
+        height: 400px;
+        margin: 20px 10px;
+        border: 3px solid rgba(216, 216, 216, 0.773);
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        transition: 0.2s ease-in;
+        max-width: 600px;
+        min-width: 500px;
+        min-height: 400px;
 
-		@media screen and (max-width: 600px) {
-			margin: 40px 20px;
-		}
-		@media screen and (max-width: 500px) {
-			width: 300px;
-			height: 200px;
-			margin: 40px 20px;
-			min-width: 300px;
-			min-height: 200px;
-		}
+        @media screen and (max-width: 600px) {
+            margin: 40px 20px;
+        }
+        @media screen and (max-width: 500px) {
+            width: 300px;
+            height: 200px;
+            margin: 40px 20px;
+            min-width: 300px;
+            min-height: 200px;
+        }
 
-		.project-browser {
-			display: flex;
-			align-items: center;
-			height: 20px;
-			background-color: rgb(243, 242, 242);
+        .project-browser {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            background-color: rgba(216, 216, 216, 0.773);
 
-			.project-circle {
-				width: 6px;
-				height: 6px;
-				background-color: white;
-				border-radius: 50%;
-				margin: 3px;
-			}
+            .project-circle {
+                width: 6px;
+                height: 6px;
+                background-color: white;
+                border-radius: 50%;
+                margin: 3px;
+            }
 
-			.red {
-				background-color: #ef524f;
-			}
+            .red {
+                background-color: #ef524f;
+            }
 
-			.yellow {
-				background-color: #f0b23d;
-			}
+            .yellow {
+                background-color: #f0b23d;
+            }
 
-			.green {
-				background-color: #35bd48;
-			}
-		}
+            .green {
+                background-color: #35bd48;
+            }
+        }
 
-		.project-image {
-			width: 100%;
-			height: 100%;
-		}
+        .project-image {
+            width: 100%;
+            height: 100%;
+        }
 
-		&:hover {
-			box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-				rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-		}
-	}
+        &:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        }
+    }
 
-	.project-title {
-		@media screen and (max-width: 500px) {
-			font-size: 20px;
-		}
-	}
+    .project-title {
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
 
-	.tech-used {
-		@media screen and (max-width: 500px) {
-			font-size: 18px;
-			font-weight: 200;
-		}
-	}
+    .tech-used {
+        @media screen and (max-width: 500px) {
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
 
-	.project-description {
-		font-size: 18px;
-		max-width: 60%;
-		font-weight: 300;
+    .project-description {
+        font-size: 18px;
+        max-width: 60%;
+        font-weight: 300;
 
-		@media screen and (max-width: 500px) {
-			max-width: 80%;
-		}
-	}
+        @media screen and (max-width: 500px) {
+            max-width: 80%;
+        }
+    }
 }
