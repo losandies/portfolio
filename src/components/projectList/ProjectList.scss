@@ -1,213 +1,229 @@
 .p1 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	width: 100vw;
-	height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
 
-	@media screen and (max-width: 500px) {
-		flex-wrap: nowrap;
-		height: auto;
-	}
+    @media screen and (max-width: 500px) {
+        flex-wrap: nowrap;
+        height: auto;
+    }
 
-	@media screen and (max-width: 1700px) {
-		flex-wrap: wrap;
-		height: auto;
-	}
+    @media screen and (max-width: 1700px) {
+        flex-wrap: wrap;
+        height: auto;
+    }
 
-	.p1-text {
-		width: 65%;
+    .p1-text {
+        width: 65%;
 
-		.p1-title {
-			margin-top: 180px;
-			font-size: 40px;
-			font-weight: 600;
+        .p1-title {
+            margin-top: 180px;
+            font-size: 40px;
+            font-weight: 600;
 
-			@media screen and (max-width: 500px) {
-				margin-top: 50px;
-				font-size: 32px;
-			}
+            @media screen and (max-width: 500px) {
+                margin-top: 50px;
+                font-size: 32px;
+            }
 
-			@media screen and (min-width: 1700px) {
-				margin-top: 100px;
-			}
-		}
-	}
+            @media screen and (min-width: 1700px) {
+                margin-top: 100px;
+            }
+        }
+    }
 
-	.list-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+    .list-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-		.p1-list {
-			width: 100%;
-			margin-top: 100px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
+        .p1-list {
+            width: 100%;
+            margin-top: 100px;
+            display: flex;
+            overflow-y: hidden;
+            flex-direction: row;
+            justify-content: space-around;
 
-			@media screen and (max-width: 500px) {
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				margin-bottom: 100px;
-			}
-			@media screen and (max-width: 1700px) {
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-				margin-bottom: 100px;
-				margin-top: 40px;
-			}
-		}
-	}
+            @media screen and (max-width: 500px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 100px;
+            }
+            @media screen and (max-width: 1700px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 100px;
+                margin-top: 40px;
+            }
+        }
+    }
 
-	.button-container {
-		width: 100%;
-		height: 80px;
-		position: absolute;
-		top: 3917px;
+    .button-container {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 3917px;
 
-		@media screen and (max-width: 1700px) {
-			position: relative;
-			top: -10px;
-		}
+        @media screen and (max-width: 1700px) {
+            position: relative;
+            top: -10px;
+        }
 
-		@media screen and (max-width: 1200px) {
-			display: none;
-		}
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
 
-		@media screen and (min-width: 1700px) {
-			top: 3576px;
-		}
+        @media screen and (min-width: 1700px) {
+            top: 3576px;
+        }
 
-		.button.scroll {
-			padding: 8px;
-			background: #212529;
-			display: inline-block;
-			width: 50px;
-			height: 50px;
-			text-align: center;
-			vertical-align: middle;
-			border-radius: 50%;
-			position: absolute;
-			left: 100px;
+        .button.scroll {
+            padding: 8px;
+            background: #212529;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+            position: absolute;
+            left: 100px;
 
-			@media screen and (max-width: 500px) {
-				display: none;
-			}
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
 
-			@media screen and (max-width: 1700px) {
-				position: absolute;
-				display: block;
-			}
+            @media screen and (max-width: 1700px) {
+                position: absolute;
+                display: block;
+            }
 
-			.scroll-down-arrow {
-				margin: 18px 0 0;
-				position: absolute;
-				left: 20px;
-				top: 7px;
-				-webkit-animation: bounce 1000ms ease infinite;
-				-moz-animation: bounce 1000ms ease infinite;
-				-o-animation: bounce 1000ms ease infinite;
-				animation: bounce 1000ms ease infinite;
-				-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				border-left: 5px solid transparent;
-				border-right: 5px solid transparent;
-				border-top: 8px solid #f2f2f2;
-				content: '';
+            .scroll-down-arrow {
+                margin: 18px 0 0;
+                position: absolute;
+                left: 20px;
+                top: 7px;
+                -webkit-animation: bounce 1000ms ease infinite;
+                -moz-animation: bounce 1000ms ease infinite;
+                -o-animation: bounce 1000ms ease infinite;
+                animation: bounce 1000ms ease infinite;
+                -webkit-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                -moz-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                -ms-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 8px solid #f2f2f2;
+                content: "";
 
-				@media screen and (max-width: 500px) {
-					position: absolute;
-					left: 50vw;
-					top: 100px;
-				}
-			}
-			.button.scroll:before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
-				padding: 2px;
-				z-index: -1;
-				width: 32px;
-				height: 32px;
-				border-radius: 50%;
-				display: block;
-				content: '';
-				-webkit-animation: ring 1s alternate 0s infinite;
-				-moz-animation: ring 1s alternate 0s infinite;
-				-o-animation: ring 1s linear 0s infinite;
-				animation: ring 1s linear 0s infinite;
-			}
-		}
-	}
+                @media screen and (max-width: 500px) {
+                    position: absolute;
+                    left: 50vw;
+                    top: 100px;
+                }
+            }
+            .button.scroll:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+                padding: 2px;
+                z-index: -1;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: block;
+                content: "";
+                -webkit-animation: ring 1s alternate 0s infinite;
+                -moz-animation: ring 1s alternate 0s infinite;
+                -o-animation: ring 1s linear 0s infinite;
+                animation: ring 1s linear 0s infinite;
+            }
+        }
+    }
 }
 
 @-webkit-keyframes bounce {
-	0%,
-	100% {
-		top: 9px;
-		opacity: 0.5;
-	}
-	25% {
-		top: 12px;
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.8;
-	}
+    0%,
+    100% {
+        top: 9px;
+        opacity: 0.5;
+    }
+    25% {
+        top: 12px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
 }
 @keyframes bounce {
-	0%,
-	100% {
-		top: 9px;
-		opacity: 0.5;
-	}
-	25% {
-		top: 12px;
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.8;
-	}
+    0%,
+    100% {
+        top: 9px;
+        opacity: 0.5;
+    }
+    25% {
+        top: 12px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
 }
 @-webkit-keyframes ring {
-	0%,
-	100% {
-		-webkit-transform: scale(1, 1);
-		opacity: 1;
-	}
-	75% {
-		-webkit-transform: scale(1.2, 1.2);
-		opacity: 0.4;
-	}
+    0%,
+    100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.4;
+    }
 }
 @keyframes ring {
-	0%,
-	100% {
-		transform: scale(1, 1);
-		opacity: 1;
-	}
-	75% {
-		transform: scale(1.2, 1.2);
-		opacity: 0.4;
-	}
+    0%,
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.2, 1.2);
+        opacity: 0.4;
+    }
 }
 
 .laptop-memoji {
-	position: relative;
-	margin: 0;
+    position: relative;
+    margin: 0;
 
-	@media screen and (max-width: 500px) {
-		display: none;
-	}
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
 
-	@media screen and (max-width: 1100px) {
-		display: none;
-	}
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
 }
