@@ -104,6 +104,9 @@ const About = () => {
                         ))}
                     </motion.ul>
                 </div>
+                <a href="#project-list" class="button scroll hidden">
+                    <span class="scroll-down-arrow"></span>
+                </a>
             </div>
         </div>
     );

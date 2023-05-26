@@ -1,287 +1,388 @@
 .about {
-	height: 100vh;
-	width: 100%;
-	display: flex;
+    height: 100vh;
+    width: 100%;
+    display: flex;
 
-	@media screen and (max-width: 500px) {
-		flex-direction: column;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-		margin-top: 50px;
-	}
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
 
-	.about-left {
-		flex: 1;
-		height: 100%;
-		width: 100%;
-		position: relative;
+    .about-left {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        position: relative;
 
-		@media screen and (max-width: 500px) {
-			display: none;
-		}
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
 
-		@media screen and (max-width: 1600px) {
-			display: none;
-		}
+        @media screen and (max-width: 1600px) {
+            display: none;
+        }
 
-		.a-card {
-			height: 100vh;
-			width: 100%;
-			.waving-memoji {
-				height: 500px;
-				width: 500px;
+        .a-card {
+            height: 100vh;
+            width: 100%;
+            .waving-memoji {
+                height: 500px;
+                width: 500px;
+                margin-top: 250px;
+                margin-left: 200px;
+                border-radius: 100%;
+                border: 1px white;
 
-				margin-top: 350px;
-				margin-left: 200px;
-				border-radius: 100%;
-				border: 1px white;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+                    rgba(0, 0, 0, 0.07) 0px 2px 4px,
+                    rgba(0, 0, 0, 0.07) 0px 4px 8px,
+                    rgba(0, 0, 0, 0.07) 0px 8px 16px,
+                    rgba(0, 0, 0, 0.07) 0px 16px 32px,
+                    rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
-				box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
-					rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
-					rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
-					rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                @media screen and (max-width: 500px) {
+                    display: none;
+                }
 
-				@media screen and (max-width: 500px) {
-					display: none;
-				}
+                @media screen and (max-width: 1400px) {
+                    display: none;
+                }
+            }
+        }
 
-				@media screen and (max-width: 1400px) {
-					display: none;
-				}
-			}
-		}
+        .button.scroll {
+            padding: 8px;
+            background: #212529;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            left: 100px;
 
-		.button.scroll {
-			padding: 8px;
-			background: #212529;
-			display: inline-block;
-			width: 50px;
-			height: 50px;
-			text-align: center;
-			vertical-align: middle;
-			border-radius: 50%;
-			position: absolute;
-			bottom: 20px;
-			left: 100px;
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
 
-			@media screen and (max-width: 500px) {
-				display: none;
-			}
+            .scroll-down-arrow {
+                margin: 18px 0 0;
+                position: absolute;
+                left: 20px;
+                top: 7px;
+                -webkit-animation: bounce 1000ms ease infinite;
+                -moz-animation: bounce 1000ms ease infinite;
+                -o-animation: bounce 1000ms ease infinite;
+                animation: bounce 1000ms ease infinite;
+                -webkit-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                -moz-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                -ms-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 8px solid #f2f2f2;
+                content: "";
 
-			.scroll-down-arrow {
-				margin: 18px 0 0;
-				position: absolute;
-				left: 20px;
-				top: 7px;
-				-webkit-animation: bounce 1000ms ease infinite;
-				-moz-animation: bounce 1000ms ease infinite;
-				-o-animation: bounce 1000ms ease infinite;
-				animation: bounce 1000ms ease infinite;
-				-webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				-moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				-ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
-				border-left: 5px solid transparent;
-				border-right: 5px solid transparent;
-				border-top: 8px solid #f2f2f2;
-				content: '';
+                @media screen and (max-width: 500px) {
+                    position: absolute;
+                    left: 50vw;
+                    top: 100px;
+                }
+            }
+            .button.scroll:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+                padding: 2px;
+                z-index: -1;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: block;
+                content: "";
+                -webkit-animation: ring 1s alternate 0s infinite;
+                -moz-animation: ring 1s alternate 0s infinite;
+                -o-animation: ring 1s linear 0s infinite;
+                animation: ring 1s linear 0s infinite;
+            }
+        }
+    }
 
-				@media screen and (max-width: 500px) {
-					position: absolute;
-					left: 50vw;
-					top: 100px;
-				}
-			}
-			.button.scroll:before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
-				padding: 2px;
-				z-index: -1;
-				width: 32px;
-				height: 32px;
-				border-radius: 50%;
-				display: block;
-				content: '';
-				-webkit-animation: ring 1s alternate 0s infinite;
-				-moz-animation: ring 1s alternate 0s infinite;
-				-o-animation: ring 1s linear 0s infinite;
-				animation: ring 1s linear 0s infinite;
-			}
-		}
-	}
+    .about-right {
+        flex: 1;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px;
+        padding-bottom: 0px;
+        padding-top: 50px;
+        width: 50%;
 
-	.about-right {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding: 80px;
-		padding-bottom: 0px;
-		padding-top: 0px;
-		width: 50%;
+        @media screen and (max-width: 500px) {
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0;
+            flex: none;
+            width: 80%;
+        }
 
-		@media screen and (max-width: 500px) {
-			padding: 0;
-			justify-content: center;
-			align-items: center;
+        @media screen and (max-width: 1400px) {
+            align-items: center;
+            justify-content: center;
+        }
 
-			flex: none;
-			width: 80%;
-		}
+        .about-title {
+            font-size: 42px;
 
-		@media screen and (max-width: 1400px) {
-			align-items: center;
-			justify-content: center;
-		}
+            @media screen and (max-width: 500px) {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+        }
 
-		.about-title {
-			font-size: 42px;
+        .description {
+            font-weight: 300;
+            line-height: 45px;
+            font-size: 30px;
 
-			@media screen and (max-width: 500px) {
-				font-size: 25px;
-				margin-bottom: 20px;
-			}
-		}
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%;
+                margin: 0;
+            }
 
-		.description {
-			font-weight: 300;
-			line-height: 45px;
-			font-size: 30px;
+            .big-letters {
+                font-size: 34px;
 
-			@media screen and (max-width: 500px) {
-				font-size: 16px;
-				line-height: 20px;
-				width: 100%;
-				margin: 0;
-			}
+                @media screen and (max-width: 500px) {
+                    font-size: 20px;
+                }
+            }
+        }
 
-			.big-letters {
-				font-size: 34px;
+        .skills {
+            margin-top: 40px;
+            display: flex;
+            width: 100%;
+            overflow: hidden;
 
-				@media screen and (max-width: 500px) {
-					font-size: 20px;
-				}
-			}
-		}
+            .skill-icon-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                flex-wrap: wrap;
+                padding-left: 50px;
 
-		.skills {
-			margin-top: 40px;
-			display: flex;
+                @media screen and (max-width: 500px) {
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 0px;
+                    padding-left: 0px;
+                }
 
-			.skill-icon-container {
-				display: flex;
-				flex-direction: row;
-				margin-left: 40px;
-				width: 100%;
-				flex-wrap: wrap;
+                @media screen and (max-width: 1400px) {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                }
+            }
 
-				@media screen and (max-width: 500px) {
-					justify-content: center;
-					align-items: center;
-					margin-left: 0;
-				}
+            @media screen and (max-width: 500px) {
+                flex-direction: column;
+            }
+        }
 
-				@media screen and (max-width: 1400px) {
-					flex-wrap: wrap;
-					flex-direction: row;
-				}
-			}
+        .circle {
+            height: 110px;
+            width: 110px;
+            background-color: rgba(202, 200, 200, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            margin-bottom: 20px;
 
-			@media screen and (max-width: 500px) {
-				flex-direction: column;
-			}
-		}
+            @media screen and (max-width: 1410px) {
+                height: 90px;
+                width: 90px;
+            }
 
-		.circle {
-			height: 150px;
-			width: 150px;
-			background-color: rgba(202, 200, 200, 0.2);
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin: 10px;
+            @media screen and (max-width: 500px) {
+                height: 75px;
+                width: 75px;
+                margin: 10px;
+            }
 
-			@media screen and (max-width: 1410px) {
-				height: 90px;
-				width: 90px;
-			}
+            .skill-image {
+                height: 90px;
+                width: 90px;
 
-			@media screen and (max-width: 500px) {
-				height: 75px;
-				width: 75px;
-			}
+                @media screen and (max-width: 1410px) {
+                    height: 70px;
+                    width: 70px;
+                }
 
-			.skill-image {
-				height: 110px;
-				width: 110px;
+                @media screen and (max-width: 500px) {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
 
-				@media screen and (max-width: 1410px) {
-					height: 70px;
-					width: 70px;
-				}
+        .button.scroll.hidden {
+            padding: 8px;
+            background: #212529;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10px;
+            left: 100px;
 
-				@media screen and (max-width: 500px) {
-					height: 50px;
-					width: 50px;
-				}
-			}
-		}
-	}
+            @media screen and (min-width: 1600px) {
+                display: none;
+            }
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+
+            .scroll-down-arrow {
+                margin: 18px 0 0;
+                position: absolute;
+                left: 20px;
+                top: 7px;
+                -webkit-animation: bounce 1000ms ease infinite;
+                -moz-animation: bounce 1000ms ease infinite;
+                -o-animation: bounce 1000ms ease infinite;
+                animation: bounce 1000ms ease infinite;
+                -webkit-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                -moz-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                -ms-animation-timing-function: cubic-bezier(
+                    0.14,
+                    0.75,
+                    0.2,
+                    1.01
+                );
+                animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 8px solid #f2f2f2;
+                content: "";
+
+                @media screen and (max-width: 500px) {
+                    position: absolute;
+                    left: 50vw;
+                    top: 100px;
+                }
+            }
+            .button.scroll:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+                padding: 2px;
+                z-index: -1;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: block;
+                content: "";
+                -webkit-animation: ring 1s alternate 0s infinite;
+                -moz-animation: ring 1s alternate 0s infinite;
+                -o-animation: ring 1s linear 0s infinite;
+                animation: ring 1s linear 0s infinite;
+            }
+        }
+    }
 }
 
 // Scroll button
 
 @-webkit-keyframes bounce {
-	0%,
-	100% {
-		top: 9px;
-		opacity: 0.5;
-	}
-	25% {
-		top: 12px;
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.8;
-	}
+    0%,
+    100% {
+        top: 9px;
+        opacity: 0.5;
+    }
+    25% {
+        top: 12px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
 }
 @keyframes bounce {
-	0%,
-	100% {
-		top: 9px;
-		opacity: 0.5;
-	}
-	25% {
-		top: 12px;
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.8;
-	}
+    0%,
+    100% {
+        top: 9px;
+        opacity: 0.5;
+    }
+    25% {
+        top: 12px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
 }
 @-webkit-keyframes ring {
-	0%,
-	100% {
-		-webkit-transform: scale(1, 1);
-		opacity: 1;
-	}
-	75% {
-		-webkit-transform: scale(1.2, 1.2);
-		opacity: 0.4;
-	}
+    0%,
+    100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.4;
+    }
 }
 @keyframes ring {
-	0%,
-	100% {
-		transform: scale(1, 1);
-		opacity: 1;
-	}
-	75% {
-		transform: scale(1.2, 1.2);
-		opacity: 0.4;
-	}
+    0%,
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.2, 1.2);
+        opacity: 0.4;
+    }
 }
