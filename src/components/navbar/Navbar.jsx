@@ -49,7 +49,7 @@ const Navbar = () => {
                         </a>
                         <a
                             className="nav-link"
-                            href="https://drive.google.com/file/d/1I9OgDWkvqZ9yAmhAD0wpGEmOhUd6gQXU/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1QiBshSRUDdACqWuhGkID_OUAFH_4xJiK/view?usp=sharing"
                             target="_blank"
                             rel="noreferrer"
                             onClick={() => handleCollapse()}
